@@ -178,13 +178,13 @@ body {
     outline-offset: 1rem; }
     .composition__photo_n1 {
       top: 2rem;
-      left: -1rem; }
+      left: 4rem; }
     .composition__photo_n2 {
       top: 9rem;
-      right: 19rem; }
+      right: 11rem; }
     .composition__photo_n3 {
       top: 16rem;
-      right: 33rem; }
+      right: 22rem; }
     .composition__photo:hover {
       transform: scale(1.1);
       z-index: 20;
@@ -212,7 +212,7 @@ body {
     text-align: center; }
 
 .row {
-  max-width: 144rem;
+  max-width: 114rem;
   margin: 0 auto; }
   .row:not(:last-child) {
     margin-bottom: 8rem; }

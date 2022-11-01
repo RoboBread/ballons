@@ -244,6 +244,27 @@ body {
   [class^="col-"]:not(:last-child) {
     margin-right: 6rem; }
 
+.third-section {
+  position: relative;
+  height: 95vh;
+  background: linear-gradient(91.4deg, rgba(186, 133, 84, 0.7) 16.34%, rgba(0, 0, 0, 0.7) 98.8%), url(../img/third-back.png) center/cover no-repeat;
+  clip-path: polygon(100% 20%, 100% 95%, 0 80%, 0 5%);
+  padding-top: 21.6rem; }
+  .third-section__card {
+    max-width: 24rem;
+    background-color: #ffffff;
+    opacity: 0.8;
+    padding-top: 2.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    min-height: 30rem; }
+    .third-section__card img {
+      margin-bottom: 2.4rem; }
+  .third-section__title {
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 1rem; }
+
 .section-about {
   padding-top: 8rem; }
 

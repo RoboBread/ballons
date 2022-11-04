@@ -36,7 +36,9 @@ body {
   background-color: #ffffff; }
 
 .container {
-  background-color: #F7F7F7; }
+  background-color: #F7F7F7;
+  position: relative;
+  z-index: 0; }
 
 body {
   font-family: "Roboto";
@@ -80,6 +82,8 @@ body {
   color: transparent;
   transition: all 0.4s;
   backface-visibility: hidden; }
+  .title-secondary_white {
+    color: #ffffff; }
   .title-secondary:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25); }
@@ -297,6 +301,66 @@ body {
       font-size: 6rem;
       font-weight: 500; }
 
+.feedBack-card {
+  width: 85%;
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  padding: 6rem;
+  transform: skewX(330deg); }
+  .feedBack-card > * {
+    transform: skewX(-330deg); }
+  .feedBack-card__img {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    border-radius: 100rem;
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    margin-right: 4rem;
+    overflow: hidden;
+    position: relative; }
+    .feedBack-card__img img {
+      width: 100%;
+      transform: scale(1.2);
+      transition: all 0.5s; }
+  .feedBack-card__name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    opacity: 0;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    font-weight: 400;
+    color: #ffffff;
+    transition: all 0.5s; }
+  .feedBack-card:hover .feedBack-card__name {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  .feedBack-card:hover img {
+    transform: scale(1);
+    filter: blur(0.5rem) brightness(70%); }
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -2;
+  height: 100%;
+  object-fit: cover; }
+
+.bg-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(90.05deg, rgba(186, 133, 84, 0.7), rgba(0, 0, 0, 0.7)); }
+
 .header {
   position: relative;
   height: 95vh;
@@ -359,5 +423,9 @@ body {
 
 .section-tour {
   padding: 8rem 0; }
+
+.section-feedBack {
+  padding: 8rem 0rem;
+  position: relative; }
 
 /*# sourceMappingURL=style.css.map */
